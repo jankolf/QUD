@@ -4,6 +4,7 @@
 <div align="center">
     <img width="25%" src="https://raw.githubusercontent.com/jankolf/assets/main/QUD/qud-logo.png">
 </div>
+<div align="center">[ /kjuːt/ ] &nbsp; </div>
 
 # <div align="center"> QUD: Unsupervised Knowledge Distillation<br>for Deep Face Recognition</div>
 
