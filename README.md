@@ -31,6 +31,10 @@
 
 Overview of the proposed unsupervised KD method QUD. Using contrastive loss, student S is trained so that the distance of its feature f = S(x) to teacher T’s positive feature f<sup>+</sup> = T(x) of the same input sample x is smaller than the distance between f and a set of negative features f<sup>-</sup> ∈ __f__<sup>-</sup> stored in a queue. The queue is filled with features of T from previous iterations. After each iteration, the current features of T are enqueued and an equal amount of the oldest features are dequeued from the queue. Only S’s parameters are updated.
 
+## <div align="center"> Video 📼 </div>
+
+https://github.com/user-attachments/assets/82cd98cf-baa8-47b5-9577-39f59b3943bc
+
 
 ## <div align="center"> Abstract 🤏 </div>
 We present in this paper an unsupervised knowledge distillation (KD) approach, namely QUD, for face recognition. The proposed QUD approach utilizes a queue of features within a contrastive learning setup to guide the student model to learn a feature representation similar to its counterpart obtained from the teacher and dissimilar from the ones that are stored in a queue. This queue is updated by pushing a batch of feature representations obtained from the teacher into the queue and dequeuing the oldest ones from the queue in each training iteration. We additionally incorporate a temperature into the contrastive loss to control how sensitive contrastive learning is to samples considered negative in the queue. The proposed unsupervised QUD approach does not require accessing the same dataset used to train the teacher model or even for the data to have identity labels. The effectiveness of the proposed approach is demonstrated through several sensitivity studies on different teacher architectures and using different datasets for student training in the KD framework. Additionally, the achieved results on mainstream benchmarks by our unsupervised QUD are compared to state-of-the-art (SOTA), achieving very competitive performances and even outperforming SOTA on several benchmarks.
